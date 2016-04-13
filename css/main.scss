@@ -1,0 +1,134 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+/* path to glyphicons */
+$icon-font-path: "node_modules/bootstrap-sass/assets/fonts/bootstrap/";
+
+// Our variables
+$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$base-font-weight: 400;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #92C03A;
+
+@mixin border-trace() {
+  border: 1px solid #333;
+}
+
+/* any style customization must be before the bootstrap import */
+@import "bootstrap";
+
+// GENERAL
+body {
+	font-family: 'Open Sans', sans-serif;
+	background: url('/images/global/bg.png');
+}
+
+#header {
+	// nav-top
+	.nav-top {
+		background: $brand-color;
+		height: 10px;
+	}
+	// nav
+	nav {
+		border: 0px;
+		background: rgba(255, 255, 255, .2);
+		border-radius: 0px;
+		.navbar-brand {
+			background: #fff;
+			margin-top: -15px;
+			min-height: 160px;
+			position: absolute;
+			color: #333;
+		}
+		.navbar-nav {
+			li {
+				a {
+					padding: 20px 30px;
+					text-transform: uppercase;
+					font-weight: bold;
+					color: #333;
+				}
+				a:hover {
+					background: $brand-color;
+					color: #fff;
+				}
+			}
+		}
+	}
+}
+
+#content {
+	// CONTENT GLOBAL STYLE
+	.gg-header {
+		text-transform: uppercase;
+		color: #fff;
+		font-size: 20px;
+		margin: 20px 20px 20px 0;
+		padding: 3px 3px 3px 10px;
+		background: $brand-color;
+	}
+	.desc {
+		line-height: 24px;
+		&.main-content {
+			font-size: 16px;
+		}
+		&.sub-content {
+			font-size: 12px;
+		}
+	}
+
+	.break-img {
+		background: url('/images/break-img/img' + random(3) + '.jpg') no-repeat center center fixed;
+		height: 200px;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+
+	// BANNER
+	.banner {
+		background: url('/images/solar-panels.jpg') no-repeat center center fixed; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		min-height: 400px;
+		margin-top: -80px;
+		z-index: -999;
+		
+		.banner--call-to-action {
+			padding-top: 200px;
+			.header {
+				margin: 30px;
+			}
+			.cta-btn {
+				padding: 10px;
+				text-transform: uppercase;
+				font-weight: bold;
+				background: none;
+				border: 3px solid #fff;
+				color: #fff;
+			}
+		}
+	}
+
+	.index-content {
+		.why-choose-gg, .testimonials-events {
+			padding: 100px 0;
+			.img {
+				padding: 25px 0 0 0;
+			}
+		}
+	}
+}
