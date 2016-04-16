@@ -132,3 +132,35 @@ body {
 		}
 	}
 }
+
+#footer {
+	.footer-one {
+		background: url('/images/global/footer-one.png');
+		min-height: 200px;
+		.content {
+			padding: 10px 0;
+			.title, .desc, .contacts {
+				margin: 10px 0;
+			}
+			.title {
+				font-weight: bold;
+			}
+			.desc {
+				font-size: 12px;
+				line-height: 18px;
+				color: #333;
+			}
+			.contacts {
+				font-size: 12px;
+				color: #333;
+			}
+		}
+	}
+	.footer-two {
+		background: url('/images/global/footer-two.png');
+		min-height: 40px;
+		.nav a {
+			color: #ccc;
+		}
+	}
+}
