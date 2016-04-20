@@ -6,6 +6,8 @@
 /* path to glyphicons */
 $icon-font-path: "node_modules/bootstrap-sass/assets/fonts/bootstrap/";
 
+$fa-font-path: "../node_modules/font-awesome/fonts/";
+
 // Our variables
 $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
@@ -25,6 +27,12 @@ $brand-color:      #92C03A;
 
 /* any style customization must be before the bootstrap import */
 @import "bootstrap";
+@import "font-awesome";
+
+.icon-user {
+  @extend .fa;
+  @extend .fa-user;
+}
 
 // GENERAL
 body {

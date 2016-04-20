@@ -25,7 +25,9 @@ markdown: kramdown
 sass:
   # loading path from site root
   # default to _sass
-  sass_dir: node_modules/bootstrap-sass/assets/stylesheets
+  load_paths:
+    - node_modules/bootstrap-sass/assets/stylesheets
+    - node_modules/font-awesome/scss
 
   # style : nested (default), compact, compressed, expanded
   #         :nested, :compact, :compressed, :expanded also works
