@@ -16,10 +16,37 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Products and Services</a></li>
-          <li><a href="#">Contact</a></li>
+          {% if page.url == '/' %}
+            <li class="active">
+          {% else %}
+            <li>
+          {% endif %}
+            <a href="/">Home</a>
+          </li>
+
+          {% if page.url == '/about/' %}
+            <li class="active">
+          {% else %}
+            <li>
+          {% endif %}
+            <a href="/about">About us</a>
+          </li>
+
+          {% if page.url == '/products-services/' %}
+            <li class="active">
+          {% else %}
+            <li>
+          {% endif %}
+            <a href="/products-services">Products and Services</a>
+          </li>
+
+          {% if page.url == '/contact/' %}
+            <li class="active">
+          {% else %}
+            <li>
+          {% endif %}
+            <a href="/contacts">Contact</a>
+          </li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div>

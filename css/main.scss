@@ -70,6 +70,13 @@ body {
 					background: $brand-color;
 					color: #fff;
 				}
+
+				&.active {
+					a {
+						background: $brand-color;
+						color: #fff;
+					}
+				}
 			}
 		}
 	}
@@ -127,6 +134,20 @@ body {
 				background: none;
 				border: 3px solid #fff;
 				color: #fff;
+			}
+		}
+
+		&.subpage {
+			min-height: 200px;
+			position: relative;
+			.title {
+				background: rgba(146,192,58, .5);
+				position: absolute;
+				bottom: 0;
+				text-transform: uppercase;
+				color: #fff;
+				padding: 5px 30px;
+				font-size: 24px;
 			}
 		}
 	}
