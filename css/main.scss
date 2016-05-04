@@ -19,7 +19,7 @@ $spacing-unit:     30px;
 
 $text-color:       #111;
 $background-color: #fdfdfd;
-$brand-color:      #92C03A;
+$brand-color:      #7BBC53;
 
 @mixin border-trace() {
   border: 1px solid #333;
@@ -38,6 +38,10 @@ $brand-color:      #92C03A;
 body {
 	font-family: 'Open Sans', sans-serif;
 	background: url('/images/global/bg.png');
+}
+
+i.fa {
+	color: #E6B90D;
 }
 
 #header {
@@ -89,6 +93,10 @@ body {
 		font-size: 20px;
 		padding: 5px 10px;
 		background: $brand-color;
+
+		i.fa {
+			color: #fff;
+		}
 	}
 	.sub-pages-header {
 		color: $brand-color;
@@ -240,6 +248,7 @@ body {
 .card .card-image {
   position: relative;
   overflow: hidden;
+  max-height: 240px;
 }
 .card .card-image img {
   border-radius: 2px 2px 0 0;
@@ -252,6 +261,9 @@ body {
   bottom: 0;
   left: 0;
   padding: 16px;
+  background: rgba(0, 0, 0, .5);
+  width: 100%;
+  font-size: 16px;
 }
 .card .card-content {
   padding: 16px;
