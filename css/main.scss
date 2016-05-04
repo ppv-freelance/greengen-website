@@ -194,6 +194,9 @@ i.fa {
 }
 
 #footer {
+	i.fa {
+		color: $brand-color;
+	}
 	.footer-one {
 		background: url('/images/global/footer-one.png');
 		min-height: 200px;
@@ -219,8 +222,14 @@ i.fa {
 	.footer-two {
 		background: url('/images/global/footer-two.png');
 		min-height: 40px;
-		.nav a {
-			color: #ccc;
+		.nav li {
+			a {
+				color: #fff;
+			}
+			a:hover {
+				color: $brand-color;
+				background: none;
+			}
 		}
 	}
 }
