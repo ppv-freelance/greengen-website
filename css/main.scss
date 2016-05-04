@@ -88,7 +88,6 @@ body {
 		text-transform: uppercase;
 		color: #fff;
 		font-size: 20px;
-		margin: 20px 0;
 		padding: 5px 10px;
 		background: $brand-color;
 	}
@@ -111,7 +110,7 @@ body {
 	}
 
 	.break-img {
-		background: url('/images/break-img/img' + random(3) + '.jpg') no-repeat center center fixed;
+		background: url('/images/break-img/img2.jpg') no-repeat center center fixed;
 		height: 200px;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
@@ -162,10 +161,7 @@ body {
 
 	.index-content {
 		.why-choose-gg, .testimonials-events {
-			padding: 100px 0;
-			.img {
-				padding: 25px 0 0 0;
-			}
+			padding: 50px 0;
 		}
 	}
 
@@ -173,9 +169,6 @@ body {
 		padding: 50px 0;
 		.who-we-are, .vision, .mission, .meet-the-team {
 			margin: 50px 0;
-			.desc {
-				border-left: 1px solid #eaeaea;
-			}
 		}
 
 		.vision, .meet-the-team {
