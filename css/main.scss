@@ -194,6 +194,12 @@ i.fa {
 
 	.contact-content {
 		padding: 50px 0;
+		#submit .fa {
+			color: #fff;
+		}
+		address .fa {
+			color: $brand-color;
+		}
 	}
 }
 
@@ -306,4 +312,14 @@ i.fa {
 .card .card-action a:hover {
   color: #ffd8a6;
   text-decoration: none;
+}
+
+.red{
+	color:red;
+}
+.form-area {
+	background-color: #FAFAFA;
+	padding: 10px 40px 60px;
+	margin: 10px 0px 60px;
+	border: 1px solid GREY;
 }
