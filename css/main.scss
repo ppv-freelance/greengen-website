@@ -4,7 +4,7 @@
 @charset "utf-8";
 
 /* path to glyphicons */
-$icon-font-path: "node_modules/bootstrap-sass/assets/fonts/bootstrap/";
+$icon-font-path: "../node_modules/bootstrap-sass/assets/fonts/bootstrap/";
 
 $fa-font-path: "../node_modules/font-awesome/fonts/";
 
@@ -34,6 +34,10 @@ $brand-color:      #7BBC53;
   @extend .fa-user;
 }
 
+@mixin shadow() {
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
 // GENERAL
 body {
 	font-family: 'Open Sans', sans-serif;
@@ -61,9 +65,7 @@ i.fa, .link {
 			min-height: 160px;
 			position: absolute;
 			color: #333;
-			-webkit-box-shadow: -1px 0px 10px -1px rgba(0,0,0,0.56);
-			-moz-box-shadow: -1px 0px 10px -1px rgba(0,0,0,0.56);
-			box-shadow: -1px 0px 10px -1px rgba(0,0,0,0.56);
+			@include shadow();
 		}
 		.navbar-nav {
 			li {
@@ -121,7 +123,7 @@ i.fa, .link {
 	}
 
 	.break-img {
-		background: url('/images/break-img/img2.jpg') no-repeat center center fixed;
+		background: url('/images/hp-img1.jpg') no-repeat center center fixed;
 		height: 200px;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
@@ -131,12 +133,12 @@ i.fa, .link {
 
 	// BANNER
 	.banner {
-		background: url('/images/solar-panels.jpg') no-repeat center center fixed; 
+		background: url('/images/banner.jpg') no-repeat center center fixed; 
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
 		background-size: cover;
-		min-height: 400px;
+		min-height: 600px;
 		margin-top: -80px;
 		z-index: -999;
 		border-bottom: 5px solid rgba(146,192,58, .7);
@@ -145,6 +147,7 @@ i.fa, .link {
 			padding-top: 200px;
 			.header {
 				margin: 30px;
+				color: #fff;
 			}
 			.cta-btn {
 				padding: 10px;
@@ -173,6 +176,9 @@ i.fa, .link {
 	}
 
 	.index-content {
+		#carousel {
+			margin-top: -200px;
+		}
 		.why-choose-gg, .testimonials-events {
 			padding: 50px 0;
 		}
@@ -254,7 +260,7 @@ i.fa, .link {
 
 
 .card {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  @include shadow();
 }
 
 .card {
@@ -328,4 +334,109 @@ i.fa, .link {
 	padding: 10px 40px 60px;
 	margin: 10px 0px 60px;
 	border: 1px solid GREY;
+}
+
+.carousel {
+	@include shadow();
+}
+
+.carousel-inner img {
+    width: 100%;
+    max-height: 460px;
+}
+
+.carousel-control {
+    width: 0;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+	opacity: 1;
+	filter: alpha(opacity=100);
+	background-image: none;
+	background-repeat: no-repeat;
+	text-shadow: none;
+}
+
+.carousel-control.left i.fa {
+	padding: 15px;
+}
+
+.carousel-control.right i.fa {
+	padding: 15px;
+}
+
+.carousel-control .fa-chevron-left, 
+.carousel-control .fa-chevron-right, 
+.carousel-control .icon-prev, 
+.carousel-control .icon-next {
+	position: absolute;
+	top: 45%;
+	z-index: 5;
+	display: inline-block;
+}
+
+.carousel-control .fa-chevron-left,
+.carousel-control .icon-prev {
+	left: 0;
+}
+
+.carousel-control .fa-chevron-right,
+.carousel-control .icon-next {
+	right: 0;
+}
+
+.carousel-control.left i.fa,
+.carousel-control.right i.fa {
+	background-color: #000;
+}
+
+.carousel-control.left i.fa:hover,
+.carousel-control.right i.fa:hover {
+	opacity: .7;
+	filter: alpha(opacity=70);
+}
+
+/* Carousel Header Styles */
+.header-text {
+    position: absolute;
+    // top: 20%;
+    bottom: 0;
+    left: 0;
+    // left: 1.8%;
+    // right: auto;
+    width: 96.66666666666666%;
+    color: #fff;
+}
+
+.header-text h2 {
+    font-size: 40px;
+}
+
+.header-text h2 span {
+    background-color: $brand-color;
+	padding: 10px;
+}
+
+.header-text h5 span {
+	background-color: #000;
+	padding: 15px;
+}
+
+.btn-min-block {
+    min-width: 170px;
+    line-height: 26px;
+}
+
+.btn-theme {
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+    margin-right: 15px;
+}
+
+.btn-theme:hover {
+    color: #000;
+    background-color: #fff;
+    border-color: #fff;
 }
