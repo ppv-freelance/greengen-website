@@ -10,7 +10,8 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand text-center" href="#"><img src="{{ site.baseurl }}/images/greengen.png" alt="" width="250px" class="img-responsive"></a>
+        <a class="navbar-brand text-center hidden-xs hidden-sm" href="#"><img src="{{ site.baseurl }}/images/greengen.png" alt="" width="250px" class="img-responsive"></a>
+        <a class="navbar-brand small text-center hidden-md hidden-lg" href="#"><img src="{{ site.baseurl }}/images/greengen-sm.png" alt="" width="60px" class="img-responsive"></a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -32,12 +33,12 @@
             <a href="/about">About us</a>
           </li>
 
-          {% if page.url == '/products-services/' %}
+          {% if page.url == '/what-we-do/' or page.url == 'what-we-do/power-grid-services/' or page.url == '/what-we-do/solar-energy-products-services/' %}
             <li class="active">
           {% else %}
             <li>
           {% endif %}
-            <a href="/products-services">Products and Services</a>
+            <a href="/what-we-do">What we do</a>
           </li>
 
           {% if page.url == '/contacts/' %}
