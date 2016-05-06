@@ -51,16 +51,15 @@ i.fa, .link {
 #header {
 	// nav-top
 	.nav-top {
-		background: $brand-color;
+		// background: $brand-color;
 		height: 10px;
 	}
 	// nav
 	nav {
-		// position: absolute;
-		// width: 100%;
 		border: 0px;
-		background: rgba(255, 255, 255, .3);
+		background: rgba(255, 255, 255, .8);
 		border-radius: 0px;
+		@include shadow();
 		.navbar-brand {
 			background: #fff;
 			margin-top: -15px;
@@ -146,7 +145,7 @@ i.fa, .link {
 		-o-background-size: cover;
 		background-size: cover;
 		min-height: 600px;
-		margin-top: -80px;
+		margin-top: -90px;
 		z-index: -999;
 		border-bottom: 5px solid rgba(146,192,58, .7);
 		
@@ -192,7 +191,8 @@ i.fa, .link {
 	}
 
 	.about-content {
-		padding: 50px 0;
+		padding-top: 50px;
+		padding-bottom: 50px;
 		.who-we-are, .vision, .mission, .meet-the-team {
 			margin: 50px 0;
 		}
@@ -203,7 +203,8 @@ i.fa, .link {
 	}
 
 	.products-services-content {
-		padding: 50px 0;
+		padding-top: 50px;
+		padding-bottom: 50px;
 		.page-header {
 			border-bottom: 1px solid #aeaeae;
 			color: $brand-color;
@@ -212,12 +213,69 @@ i.fa, .link {
 	}
 
 	.contact-content {
-		padding: 50px 0;
+		padding-top: 50px;
+		padding-bottom: 50px;
 		#submit .fa {
 			color: #fff;
 		}
 		address .fa {
 			color: $brand-color;
+		}
+	}
+
+	.what-we-do-content {
+		padding-top: 50px;
+		padding-bottom: 50px;
+		.power-grid, .solar-energy {
+			position: relative;
+			height: 700px;
+			.content {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				padding: 20px;
+				color: #fff;
+				.title {
+					background: #333;
+					padding: 10px;
+					min-height: 80px;
+					h3 {
+						text-transform: uppercase;
+					}
+				}
+				.desc {
+					background: #eaeaea;
+					max-height: 50px;
+					padding: 10px;
+					width: 80%;
+					p {
+						line-height: 18px;
+						color: #333;
+					}
+				}
+				.button {
+					padding: 10px 30px;
+					border: 5px solid #fff;
+					color: #fff;
+					&:hover {
+						text-decoration: none;
+					}
+				}
+			}
+		}
+		.power-grid {
+			background: url('/images/sample/sample1.jpg') no-repeat center top; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+		.solar-energy {
+			background: url('/images/sample/sample2.jpg') no-repeat center top; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
 		}
 	}
 }
