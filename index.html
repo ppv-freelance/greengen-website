@@ -7,7 +7,7 @@ nav_name: Home
     <div class="container">
         <div class="row">
             <div class="banner--call-to-action text-center">
-                <h1 class="header">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
+                <h1 class="header">Providing solutions the greener way</h1>
                 <a href="/products-services" class="cta-btn">Learn more</a>
             </div>
         </div>
@@ -80,15 +80,14 @@ nav_name: Home
 
     <div class="row why-choose-gg">
         <div class="col-lg-5 img">
-            <img src="http://placehold.it/550x350" class="img-responsive">
+            <img src="{{ site.baseurl }}/images/greengen.png" class="img-responsive">
         </div>
         <div class="col-lg-7">
             <div class="gg-header">
                 <i class="fa fa-angle-double-right" aria-hidden="true"></i> Why Choose Greengen
             </div>
             <div class="desc main-content">
-                Our company is focused on providing well designed both grid tied and off-grid solar systems that are
-                made of high quality materials to residential, commercial, non-profit and government institutions.
+                GreenGen Inc. was established in Philippines in the first quarter of 2015 in association with a foreign company Digital Power Technology which started its operation in the first quarter of 2008 at the Kingdom of Saudi Arabia.
             </div>
             <a href="/about" class="link">continue <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
         </div>
@@ -99,41 +98,36 @@ nav_name: Home
 
 <div class="container index-content">
     <div class="row testimonials-events">
-        <div class="col-lg-6">
-            <div class="col-lg-5 img">
-                <img src="http://placehold.it/250x150" class="img-responsive">
+        <div class="col-lg-12">
+            <div class="col-lg-6 img">
+                <div id="gallery" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#gallery" data-slide-to="0" class="active"></li>
+                        <li data-target="#gallery" data-slide-to="1" class=""></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="{{ site.baseurl }}/images/omicron.png" class="img-responsive">
+                        </div>
+                        <div class="item">
+                            <img src="{{ site.baseurl }}/images/testing.jpg" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-7">
+            <div class="col-lg-6">
                 <div class="gg-header">
-                    <i class="fa fa-angle-double-right" aria-hidden="true"></i> Client Testimonial
-                </div>
-                <div class="desc sub-content">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, sequi. Earum consequuntur explicabo
-                    rem aut nihil, tempora hic. Vitae velit delectus facere quia est consequuntur maxime similique
-                    minima porro aut!
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, sequi. Earum consequuntur explicabo
-                    rem aut nihil, tempora hic. Vitae velit delectus facere quia est consequuntur maxime similique
-                    minima porro aut!
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-6">
-            <div class="col-lg-5 img">
-                <img src="http://placehold.it/550x350" class="img-responsive">
-            </div>
-            <div class="col-lg-7">
-                <div class="gg-header">
-                    <i class="fa fa-angle-double-right" aria-hidden="true"></i> Latest News/Events
-                </div>
-                <div class="desc sub-content">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, sequi. Earum consequuntur explicabo
-                    rem aut nihil, tempora hic. Vitae velit delectus facere quia est consequuntur maxime similique
-                    minima porro aut!
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, sequi. Earum consequuntur explicabo
-                    rem aut nihil, tempora hic. Vitae velit delectus facere quia est consequuntur maxime similique
-                    minima porro aut!
+                    <i class="fa fa-angle-double-right" aria-hidden="true"></i> Gallery
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<script>
+    $(function() {
+        $('#gallery').carousel({
+          interval: 2000
+        })
+    });
+</script>
