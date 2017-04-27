@@ -1,49 +1,57 @@
-
 <div id="footer">
-  <div class="footer-one">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-2 col-sm-offset-2">
-          <a class="navbar-brand text-center" href="#"><img src="{{ site.baseurl }}/images/greengen.png" alt="" width="150px" class="img-responsive"></a>
+    <div class="footer-one">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2 col-sm-offset-2">
+                    <a class="navbar-brand text-center" href="#"><img src="{{ site.baseurl }}/images/greengen.png"
+                                                                      alt="" width="150px" class="img-responsive"></a>
+                </div>
+                <div class="col-sm-8 content">
+                    <div class="contacts">
+                        <div class="address col-sm-4">
+                            <i class="fa fa-home" aria-hidden="true"></i> Room 405, 4/F The Gregorian Building 2178 Taft
+                            Avenue, Malate, Manila, Philippines
+                        </div>
+                        <div class="number col-sm-2">
+                            <i class="fa fa-phone" aria-hidden="true"></i> (02) 522 1181
+                        </div>
+                        <div class="email col-sm-4">
+                            <i class="fa fa-envelope" aria-hidden="true"></i> info@greengeninc.com.ph
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
-        <div class="col-sm-8 content">
-          <div class="contacts">
-            <div class="address col-sm-4">
-              <i class="fa fa-home" aria-hidden="true"></i> Room 405, 4/F The Gregorian Building 2178 Taft Avenue, Malate, Manila, Philippines
+    </div>
+    <div class="footer-two">
+        <div class="container">
+            <div class="row">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="/"></i>Home</a>
+                    </li>
+                    <li>
+                        <a href="/about">About us</a>
+                    </li>
+                    <li>
+                        <a href="/products-services">Products & Services</a>
+                    </li>
+                    <li>
+                        <a href="/contacts">Contacts</a>
+                    </li>
+                </ul>
             </div>
-            <div class="number col-sm-2">
-              <i class="fa fa-phone" aria-hidden="true"></i> (02) 522 1181
-            </div>
-            <div class="email col-sm-4">
-              <i class="fa fa-envelope" aria-hidden="true"></i> info@greengeninc.com.ph
-            </div>
-          </div>
         </div>
-        
-      </div>
     </div>
-  </div>
-  <div class="footer-two">
-    <div class="container">
-      <div class="row">
-        <ul class="nav navbar-nav">
-          <li class="active">
-            <a href="/"></i>Home</a>
-          </li>
-          <li>
-            <a href="/about">About us</a>
-          </li>
-          <li>
-            <a href="/products-services">Products & Services</a>
-          </li>
-          <li>
-            <a href="/contacts">Contacts</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
 </div>
 
 <script src="{{ site.baseurl }}/node_modules/jquery/dist/jquery.min.js"></script>
 <script src="{{ site.baseurl }}/node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+<script>
+    $(function() {
+        $('#gallery').carousel({
+            interval: 2000
+        })
+    });
+</script>
