@@ -58,6 +58,9 @@ i.fa, .link {
 	nav {
 		border: 0px;
 		background: rgba(255, 255, 255, .8);
+		@media only screen and (max-width: 766px) {
+			background: #fff;
+		}
 		border-radius: 0px;
 		@include shadow();
 		.navbar-brand {
